@@ -7,4 +7,4 @@
     Change StudentId = '學號'
     StudentPasswd = '密碼'
 5. Run the file.
-6. F
+6. Finish
