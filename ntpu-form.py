@@ -78,3 +78,5 @@ for index, classData in enumerate(tr):
             print('由 ' + classTeacher.text + ' 老師開的 ' + classType.text + ' 修課程：' + className.text + ' 問卷填寫完成。')
         else:
             print('由 '+classTeacher.text+' 老師開的 '+classType.text+' 修課程：'+className.text+' 問卷已經填寫過。')
+formDriver.close()
+driver.close()
