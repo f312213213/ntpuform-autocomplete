@@ -1,14 +1,18 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.edge.service import Service
 from selenium.webdriver.common.by import By
+import os
 
-StudentId = '學號'
-StudentPasswd = '密碼'
+StudentId = '410874230'
+StudentPasswd = 'David-04190975'
 
+os.chmod('./msedgedriver', 0o755)
+ser = Service('./msedgedriver')
+op = webdriver.EdgeOptions()
+driver = webdriver.Edge(service=ser, options=op)
 
-ser = Service('./chromedriver.exe')
-op = webdriver.ChromeOptions()
-driver = webdriver.Chrome(service=ser, options=op)
+# driver = webdriver.Edge(executable_path='/Users/david/Downloads/edgedriver_arm64/msedgedriver.exe')
+
 
 driver.get("https://cof.ntpu.edu.tw/student_new.htm")
 
